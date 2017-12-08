@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Wikipedia</title>
+</head>
+<body>
+        <div class="gif-bg">
+            </div>  
+    <div class="container">
+
+        <div id="app">
+            <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="logo" src = "https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png"></a>
+            <!-- <div class=searchba></div> --><br>
+            <form class="searchbar">
+                <input type="text" ref="my_input">
+                <button @click.prevent="getFormValues()" class="searchButton">Search</button>
+              </form>
+              <!-- 
+              <div v-for="(value, key, index) in object">
+                  {{ index }}. {{ key }}: {{ value }}
+                </div> -->
+                
+
+                <!-- Json Result: {{ output }} -->
+              <!-- Json Result: {{ json }}<h3>{{results}}</h3> -->
+              <!-- <ul id="example-1">
+                    <li v-for="result in results">
+                        <a v-bind:href="result.url"> {{ result.title }}</a>
+                    </li>
+                </ul> -->
+               
+                    <div v-for="result in results" class="article">
+                        <a v-bind:href="result.url"> <h2 class="article-title">{{ result.title }}</h2></a>
+                        <p class="snippet">{{ result.snippet }}</p>
+                    </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

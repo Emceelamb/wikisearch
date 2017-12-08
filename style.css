@@ -1,0 +1,124 @@
+.article{
+  width:42.7%;
+/*   overflow: auto; */
+  float:left;
+  height:300px;
+  padding:25px;
+  margin:5px;
+  
+  background-color:rgba(233,233,233,0.25);
+/*  outline: #4CAF50 solid 10px; */
+  border-radius: 25px;   
+    transition: border-radius 1s ease; 
+
+}
+
+.article:hover{
+    background-color:rgba(233,233,233,0.75);
+  border-radius:0px;
+    transition: border-radius 1s ease;
+  
+
+  border-style:solid;
+  border-color:white;
+}
+
+.article-title{
+  text-decoration: none;
+  transition: border-radius 1s ease; 
+
+}
+.article-title:hover{
+  text-decoration: none;
+  color:darkgrey;  
+  transition: color 1s ease;
+
+}
+
+
+a{
+  color:black;
+  transition: color 1s ease;
+
+    
+}
+a:hover{
+  color:darkgrey;transition: color 1s ease;
+}
+.article-title{
+  padding-left:25px;
+  color: black;
+}
+.snippet{
+  padding:25px
+}
+
+.searchButton{
+  display:none;
+}
+
+.logo:hover{
+  opacity:1;
+}
+
+.logo{
+  width:25%;
+  display:block;
+  margin:auto;
+  opacity: 0.8;
+  padding-top: 50px;
+  top:80px;
+/*   background-color:white;
+  top:20px; */
+}
+
+.searchbar{
+  margin:auto 0px;
+  display:block;
+  text-align:center;
+  
+/*   float:right; */
+  
+}
+
+input{
+  border-radius:25px;
+  background-color:red;
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: rgba(230,230,230,0.2);
+    border: 2px solid #333333;
+    opacity:0.4;
+  
+    border-radius: 25px;
+    box-shadow: none;
+    box-sizing: border-box;
+  margin-top:40px
+}
+
+input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus {
+ border:1px solid #333333;
+ outline:0;
+   opacity:1;
+     
+  border-radius: 25px;
+}
+
+/* giphy */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .gif-bg {
+    background:url('');	
+    background-repeat:repeat-y;
+    width:100%; 
+    height:100%;
+    min-height:100%; /* for mobile and tablets */
+    background-size:cover;	
+    padding: 25px;
+    position:fixed;
+  }
